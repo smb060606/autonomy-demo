@@ -1,0 +1,37 @@
+# Secrets - NEVER commit
+secrets.yaml
+
+# Node modules
+node_modules/
+ui/node_modules/
+
+# Build outputs
+ui/.next/
+ui/out/
+images/main/public/
+
+# Logs
+*.log
+logs_server.log
+
+# OS files
+.DS_Store
+.env.local
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+
+
+
