@@ -44,7 +44,7 @@ You should see a table of running containers (may be empty).
 Create `secrets.yaml` in the project root:
 
 ```bash
-cd /Users/smb/Desktop/Personal/autonomy-demo
+cd /path/to/autonomy-demo
 cp secrets.yaml.template secrets.yaml
 ```
 
@@ -61,7 +61,7 @@ Edit `secrets.yaml` and replace `your_brave_api_key_here` with your actual Brave
 This connects your local machine to your Autonomy cluster:
 
 ```bash
-cd /Users/smb/Desktop/Personal/autonomy-demo
+cd /path/to/autonomy-demo
 autonomy cluster enroll --no-input
 ```
 
@@ -155,7 +155,7 @@ https://${CLUSTER}-${ZONE}.cluster.autonomy.computer/
 Start the logs server:
 
 ```bash
-cd /Users/smb/Desktop/Personal/autonomy-demo
+cd /path/to/autonomy-demo
 autonomy zone inlet --to logs > logs_server.log 2>&1 &
 LOGS_PID=$!
 sleep 3
@@ -200,14 +200,14 @@ If you make changes to the code:
 ### Update Backend (Python)
 
 ```bash
-cd /Users/smb/Desktop/Personal/autonomy-demo
+cd /path/to/autonomy-demo
 autonomy zone deploy
 ```
 
 ### Update Frontend (UI)
 
 ```bash
-cd /Users/smb/Desktop/Personal/autonomy-demo/ui
+cd /path/to/autonomy-demo/ui
 npm run build-autonomy
 cd ..
 autonomy zone deploy
@@ -245,7 +245,7 @@ The zone might still be starting. Wait a minute and try again.
 To remove the deployment:
 
 ```bash
-cd /Users/smb/Desktop/Personal/autonomy-demo
+cd /path/to/autonomy-demo
 autonomy zone delete --yes
 ```
 
